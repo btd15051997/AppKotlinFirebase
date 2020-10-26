@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SearchFragment">
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_margin="@dimen/_5sdp"
+        android:imeOptions="actionSearch"
+        android:hint="Search User"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycview_search"
+    android:layout_width="match_parent"
+    tools:listitem="@layout/item_search_users"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    app:reverseLayout="true"
+    android:layout_height="match_parent"/>
+
+</LinearLayout>
